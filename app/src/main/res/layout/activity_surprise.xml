@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context="com.example.neel.swing.Surprise">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="We have detected you are Surprised"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/surprise_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:onClick="surpriseArticle"
+        android:text="Articles" />
+
+    <Button
+        android:id="@+id/surprise_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/surprise_article"
+        android:layout_below="@+id/surprise_article"
+        android:layout_marginTop="55dp"
+        android:onClick="surpriseVideo"
+        android:text="Videos"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/surprise_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/surprise_video"
+        android:layout_below="@+id/surprise_video"
+        android:layout_marginTop="68dp"
+        android:onClick="surpriseSongs"
+        android:text="Songs" />
+</RelativeLayout>

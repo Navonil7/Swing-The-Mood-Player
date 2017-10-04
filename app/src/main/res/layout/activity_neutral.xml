@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context="com.example.neel.swing.Neutral">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="38dp"
+        android:text="Neutral"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    <Button
+        android:id="@+id/neutral_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="53dp"
+        android:onClick="neutralArticle"
+        android:text="Articles" />
+
+    <Button
+        android:id="@+id/neutral_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/neutral_article"
+        android:layout_below="@+id/neutral_article"
+        android:layout_marginTop="55dp"
+        android:onClick="neutralVideo"
+        android:text="Videos" />
+
+    <Button
+        android:id="@+id/neutral_songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/neutral_video"
+        android:layout_below="@+id/neutral_video"
+        android:layout_marginTop="68dp"
+        android:onClick="neutralSongs"
+        android:text="Songs" />
+</RelativeLayout>

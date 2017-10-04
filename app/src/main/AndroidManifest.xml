@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.neel.swing">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".select_image" />
+        <activity android:name=".Happy" />
+        <activity android:name=".Contempt" />
+        <activity android:name=".Surprise" />
+        <activity android:name=".Neutral" />
+        <activity android:name=".Sadness" />
+        <activity android:name=".Fear" />
+        <activity android:name=".Disgust" />
+        <activity android:name=".HappyArticles" />
+        <activity android:name=".HappyVideo" />
+        <activity android:name=".HappySongs" />
+        <activity android:name=".ContemptSongs" />
+        <activity android:name=".ContemptArticles" />
+        <activity android:name=".ContemptVideo" />
+        <activity android:name=".DisgustArticles" />
+        <activity android:name=".DisgustVideos" />
+        <activity android:name=".DisgustSongs" />
+        <activity android:name=".NeutralVideo" />
+        <activity android:name=".NeutralSongs" />
+        <activity android:name=".NeutralArticles" />
+        <activity android:name=".SadArticles" />
+        <activity android:name=".SadVideo" />
+        <activity android:name=".SadSongs" />
+        <activity android:name=".SurpriseArticles" />
+        <activity android:name=".SurpriseSongs" />
+        <activity android:name=".SurpriseVideo" />
+        <activity android:name=".fearArticles" />
+        <activity android:name=".FearVideos" />
+        <activity android:name=".FearSongs"></activity>
+    </application>
+
+</manifest>

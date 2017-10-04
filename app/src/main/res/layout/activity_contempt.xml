@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context="com.example.neel.swing.Contempt">
+
+    <Button
+        android:id="@+id/contempt_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="contemptVideo"
+        android:text="Videos"
+
+        android:layout_below="@+id/contempt_article"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/contempt_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:onClick="contemptArticle"
+        android:text="Articles"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/contempt_video" />
+
+    <Button
+        android:id="@+id/contempt_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="contemptSongs"
+        android:text="Songs"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/contempt_video"
+        android:layout_alignStart="@+id/contempt_video" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="We have detected you are Contempt"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

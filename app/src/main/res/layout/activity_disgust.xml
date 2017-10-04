@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/unnamed"
+    tools:context="com.example.neel.swing.Disgust">
+
+    <Button
+        android:id="@+id/disgust_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="disgustVideo"
+        android:text="Videos"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/disgust_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="disgustArticle"
+        android:text="Articles"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/disgust_video" />
+
+    <Button
+        android:id="@+id/disgust_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="disgustSongs"
+        android:text="Songs"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/disgust_video"
+        android:layout_alignStart="@+id/disgust_video" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="We have detected you feel Disgust"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
